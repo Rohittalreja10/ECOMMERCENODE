@@ -1,0 +1,204 @@
+<html>
+<head>
+    <style>
+        .dropdownmenu ul, .dropdownmenu li{
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdownmenu ul{
+            list-style: none;
+            width: 70%;
+            position: absolute;
+            top: 4%;
+            left: 25%;
+        }
+
+        .dropdownmenu li{
+            float: left;
+            position: relative;
+        }
+
+        .dropdownmenu a{
+            /*background-color: white;*/
+            color:black;
+            display: block;
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 35px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .dropdownmenu li:hover a{
+            
+
+        }
+
+        #submenu{
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+            
+        }
+
+        li:hover ul#submenu{
+            opacity: 1;
+            top: 80px;
+            visibility: visible;
+            font-size: 0;
+        }
+        .im{
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+        .deco{
+            position: absolute;
+            top: 130%;
+            left: 5%;
+        }
+        .wall{
+            position: absolute;
+            top: 130%;
+            left: 30%;
+        }
+        .pott{
+            position: absolute;
+            top: 130%;
+            left: 55%;
+        }
+        .curtain{
+            position: absolute;
+            top: 130%;
+            left: 80%;
+        }
+        .last{
+            position: absolute;
+            top: 200%;
+            left: 5%;
+        }
+        .last1{
+            position: absolute;
+            top: 200%;
+            left: 30%;
+        }
+        .last2{
+            position: absolute;
+            top: 200%;
+            left: 55%;
+        }
+        .last3{
+            position: absolute;
+            top: 200%;
+            left: 80%;
+        }
+</style>
+</head>
+<body>
+<h2 style="padding: 20px 50px 75px 70px;font-size: 30px;">DEPOT</h2>
+<nav class="dropdownmenu">
+    
+    <ul style="display: inline-block;"  >
+        <li ><a href=""><b>Home</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/home"> Main    Home </a></li>
+            <li class="lc"><a href="/mhome"> Minimal Home </a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Shop</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/hd"> Home Decor</a></li>
+            <li class="lc"><a href="/li"> Lighting</a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Pages</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/au">About Us</a></li>
+            <li class="lc"><a href="/tc">Terms & Conditions</a></li>
+        </ul>
+        </li>
+        <li style="margin-right: 150px;"><a href=""><b>Elements</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/os">On Sale Products</a></li>
+            <li class="lc"><a href="/bs"> Best Selling Products</a></li>
+        </ul>
+        </li>
+        <li ><a href=""><b>Cart</b></a>
+    </ul>        
+</nav>
+<div class  ="im">
+<img src="photos\vase.jpeg" height="400px" width="400px" alt="sample image"  />
+</div>
+<p style="padding: 20px 50px 75px 620px;font-size: 30px;">
+    FLOWER VASE
+</p>
+<p style="padding: 30px 50px 10px 620px;font-size: 30px; width: 40%;">
+    Vases generally share a similar shape. The foot or the base may be bulbous, flat, carinate,[1] or another shape. The body forms the main portion of the piece.
+</p>
+<div>
+<label for="quantity" style="padding: 0px 50px 75px 620px;">Qantity</label>
+<input type="number" id="quantity" name="quantity">
+<button style="background-color: black; color:white;" type="button">Add to Cart</button>
+</div>
+<h2 style="padding: 100px 50px 75px 100px;">RELATED PRODUCTS</h2>
+<div class  ="deco">
+<img  src="photos\deco.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DECOR ACCESSORY</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="wall">
+<img  src="photos\wall.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WALL CLOCK</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="pott">
+<img  src="photos\pott.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POTTERY VASE</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="curtain">
+<img  src="photos\curtain.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURTAIN HOLDBACK</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="last">
+    <h3>CUSTOMER SERVICE</h3>
+    <div style="line-height:10px">
+    <p>Help & Contact us</p>
+    <p>Returns & Refunds</p>
+    <p>Online Stores</p>
+    <p>Terms & Conditions</p>
+</div></div>
+<div class  ="last1">
+    <h3>COMPANY</h3>
+    <div style="line-height:10px">
+        <p>What We Do</p>
+        <p>Our Services</p>
+        <p>Latest Photos</p>
+        <p>FAQs</p>
+    </div>
+</div>
+<div class  ="last2">
+    <h3>SOCIAL MEDIA</h3>
+    <div style="line-height:10px">
+        <p>Twitter</p>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Pinterest</p>
+    </div>
+</div>
+<div class  ="last3">
+    <h3>PROFILE</h3>
+    <div style="line-height:10px">
+        <p>My Account</p>
+        <p>Checkout</p>
+        <p>Order Tracking</p>
+        <p>Help & Support</p>
+    </div>
+</div>
+</body>
+</html>

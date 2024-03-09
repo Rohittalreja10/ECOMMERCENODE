@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdownmenu ul, .dropdownmenu li{
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdownmenu ul{
+            list-style: none;
+            width: 50%;
+            position: absolute;
+            top: 4%;
+            left: 6.6%;
+        }
+
+        .dropdownmenu li{
+            float: left;
+            position: relative;
+        }
+
+        .dropdownmenu a{
+            /*background-color: white;*/
+            color:black;
+            display: block;
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 35px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .dropdownmenu li:hover a{
+            
+
+        }
+
+        #submenu{
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+            
+        }
+
+        li:hover ul#submenu{
+            opacity: 1;
+            top: 80px;
+            visibility: visible;
+            font-size: 0;
+        }
+        .cart{
+            position: absolute;
+            top: 3%;
+            left: 65%;
+        }
+        .login{
+            position: absolute;
+            top: 3%;
+            left: 75%;
+        }
+        .sea{
+            position: absolute;
+            top: 3%;
+            left: 85%;
+        }
+        .lc{
+            background-color: #D3D3D3;
+        }
+        .im{
+            position: absolute;
+            left: 40%;
+            top: 0%;
+            width: 450px;
+            height: 400px;
+        }
+        .ima{
+            position: absolute;
+            left: 80%;
+            top: 0%;
+            float: right;
+            width: 150px;
+            height: 150px;
+
+        }
+        .pos{
+            position: absolute;
+            width: 80%;
+            height: 60%;
+            left: 5%;
+            top: 15%;
+            background-color:#D3D3D3!important;
+            padding: 70px;
+            margin: 20px;
+        }
+        .all{
+            position: absolute;
+            top: 110%;
+        }
+        .cattle{
+            position: absolute;
+            top: 120%;
+            left: 5%;
+        }
+        .vase{
+            position: absolute;
+            top: 120%;
+            left: 29%;
+        }
+        .deco{
+            position: absolute;
+            top: 120%;
+            left: 54%;
+        }
+        .wall{
+            position: absolute;
+            top: 120%;
+            left: 79%;
+        }
+        .news{
+            position: absolute;
+            top: 190%;
+            left: 5%;
+        }
+        .pott{
+            position: absolute;
+            top: 190%;
+            left: 29%;
+        }
+        .curtain{
+            position: absolute;
+            top: 190%;
+            left: 54%;
+        }
+        .table{
+            position: absolute;
+            top: 190%;
+            left: 79%;
+        }
+        .cartTab{
+            width: 400px;
+            background-color: black;
+            color: white;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            inset: 0 -400px 0 auto;
+            display: grid;
+            grid-template-rows: 70px 1fr 70px;
+            transition: .5s;
+        }
+        .cartTab h1{
+            padding: 20px;
+            margin: 0;
+            font-weight: 300;
+        }
+        .cartTab .btn{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .cartTab .btn button{
+            background-color: yellow;
+            border: none;
+            font-weight: 500;
+        }
+        .cartTab .btn .close{
+            background-color: white;
+        }
+        .cartTab .listCart .item img{
+            width: 100%;
+        }
+        .cartTab .listCart .item{
+            display: grid;
+            grid-template-columns: 70px 150px 50px 1fr;
+            gap: 5px;
+            text-align: center;
+            align-items: center; 
+
+        }
+        .listCart .quantity span{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            color: red;
+            border-radius: 50%;
+        }
+        .listCart .quantity span:nth-child(2){
+            background-color: transparent;
+            color: white;
+        }
+        .listCart .item:nth-child(even){
+            background-color: black;
+        }
+        .listCart{
+            overflow: auto;
+        }
+        body.showCart .cartTab{
+            inset: 0 0 0 auto;
+        }
+        body.showCart .container{
+            transform: translateX(-250px);
+        }
+        .last{
+            position: absolute;
+            top: 260%;
+            left: 5%;
+        }
+        .last1{
+            position: absolute;
+            top: 260%;
+            left: 30%;
+        }
+        .last2{
+            position: absolute;
+            top: 260%;
+            left: 55%;
+        }
+        .last3{
+            position: absolute;
+            top: 260%;
+            left: 80%;
+        }
+    </style>
+</head>
+<body class="">
+<div>
+<nav class="dropdownmenu">
+    
+    <ul style="display: inline-block;"  >
+        <li><a href=""><b>Home</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/home"> Main    Home </a></li>
+            <li class="lc"><a href="/mhome"> Minimal Home </a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Shop</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/hd"> Home Decor</a></li>
+            <li class="lc"><a href="/li"> Lighting</a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Pages</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/au">About Us</a></li>
+            <li class="lc"><a href="/tc">Terms & Conditions</a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Elements</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/os">On Sale Products</a></li>
+            <li class="lc"><a href="/bs"> Best Selling Products</a></li>
+        </ul>
+        </li>
+    </ul>        
+</nav>
+<h1 style="text-align: center;">DEPOT</h1>
+</div>
+<div class  ="cart">
+<h4>Cart</h4>
+</div>
+<div class  ="login">
+<h4>Login</h4>
+</div>
+<div class  ="sea">
+<h4>Search</h4>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class = "pos">
+<img class  ="ima" src="photos\bulb.jpeg" alt="sample image"  />
+<img class  ="im" src="photos\lamp.jpeg" alt="sample image"  />
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>PREMIUM COMFORT</h1>
+<h4>One-click import feature lets you import the complete</h4>
+<h4>Depot demo content with a single mouse click.</h4>
+        
+</div></p>
+</div>
+<div class="all">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="display: inline-block">ALL</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="display: inline-block">HOME DECOR</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="display: inline-block">LIGHTING</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="display: inline-block">DECORATION</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="display: inline-block">VASES</h4>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h4 style="display: inline-block">BASICS</h4>
+</div>
+<div class  ="cattle">
+<img  src="photos\cattle.jpg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TEA CATTLE</h3>
+<button class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</button>
+</div>
+<div class  ="vase">
+<img  src="photos\vase.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FLOWER VASE</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="deco">
+<img  src="photos\deco.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DECOR ACCESSORY</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="wall">
+<img  src="photos\wall.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WALL CLOCK</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="news">
+<img  src="photos\news.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NEWSPAPER STORE</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="pott">
+<img  src="photos\pott.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POTTERY VASE</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="curtain">
+<img  src="photos\curtain.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CURTAIN HOLDBACK</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class  ="table">
+<img  src="photos\table.jpeg" width="250px" height="270px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TABLE LAMP</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add To Cart</h4>
+</div>
+<div class="cartTab">
+    <h1>Shopping Cart</h1>
+    <div class="listCart">
+        <div class="item">
+            <div class="image">
+                <img src="photos\vase.jpeg" height="25px" width="5px" alt="">
+            </div>
+            <div class="name">
+                NAME
+            </div>
+            <div class="totalPrice">
+                2000rs
+            </div>
+            <div class="quantity">
+                <span class="minus"><</span>
+                <span class="">1</span>
+                <span class="plus">></span>
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="close">CLOSE</button>
+        <button class="checkOut">CHECK OUT</button>
+    </div>
+</div>
+<div class  ="last">
+    <h3>CUSTOMER SERVICE</h3>
+    <div style="line-height:10px">
+    <p>Help & Contact us</p>
+    <p>Returns & Refunds</p>
+    <p>Online Stores</p>
+    <p>Terms & Conditions</p>
+</div></div>
+<div class  ="last1">
+    <h3>COMPANY</h3>
+    <div style="line-height:10px">
+        <p>What We Do</p>
+        <p>Our Services</p>
+        <p>Latest Photos</p>
+        <p>FAQs</p>
+    </div>
+</div>
+<div class  ="last2">
+    <h3>SOCIAL MEDIA</h3>
+    <div style="line-height:10px">
+        <p>Twitter</p>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Pinterest</p>
+    </div>
+</div>
+<div class  ="last3">
+    <h3>PROFILE</h3>
+    <div style="line-height:10px">
+        <p>My Account</p>
+        <p>Checkout</p>
+        <p>Order Tracking</p>
+        <p>Help & Support</p>
+    </div>
+</div>
+</body>
+</html>

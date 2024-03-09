@@ -1,0 +1,233 @@
+<html>
+<head>
+        <style>
+        .dropdownmenu ul, .dropdownmenu li{
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdownmenu ul{
+            list-style: none;
+            width: 80%;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+
+        .dropdownmenu li{
+            float: left;
+            position: relative;
+        }
+
+        .dropdownmenu a{
+            /*background-color: white;*/
+            color:black;
+            display: block;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 60px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .dropdownmenu li:hover a{
+            
+
+        }
+
+        #submenu{
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+            
+        }
+
+        li:hover ul#submenu{
+            opacity: 1;
+            top: 80px;
+            visibility: visible;
+            font-size: 0;
+        }
+        .basket{
+            position: absolute;
+            left: 15%;
+            top: 35%;
+        }
+        .av{
+            position: absolute;
+            left: 55%;
+            top: 35%;
+        }
+        .fg{
+            position: absolute;
+            left: 55%;
+            top: 90%;
+        }
+        .br{
+            position: absolute;
+            left: 30%;
+            top: 165%;
+            width: 38%;
+            font-size: 25px;
+        }
+        .wl{
+            position: absolute;
+            left: 40%;
+            top: 160%;
+            font-size: 20px;
+        }
+        .fi{
+            position: absolute;
+            left: 10%;
+            top: 190%;
+            font-size: 20px;
+        }
+        .pott{
+            position: absolute;
+            left: 10%;
+            top: 210%;
+        }
+        .deco{
+            position: absolute;
+            left: 40%;
+            top: 210%;
+        }
+        .wall{
+            position: absolute;
+            left: 70%;
+            top: 210%;
+        }
+        .last{
+            position: absolute;
+            top: 275%;
+            left: 5%;
+        }
+        .last1{
+            position: absolute;
+            top: 275%;
+            left: 30%;
+        }
+        .last2{
+            position: absolute;
+            top: 275%;
+            left: 55%;
+        }
+        .last3{
+            position: absolute;
+            top: 275%;
+            left: 80%;
+        }
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">DEPOT</h1>
+
+<nav class="dropdownmenu">
+    
+    <ul >
+        <li><a href=""><b>Home</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/home"> Main    Home </a></li>
+            <li class="lc"><a href="/mhome"> Minimal Home </a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Shop</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/hd"> Home Decor</a></li>
+            <li class="lc"><a href="li"> Lighting</a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Pages</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/au">About Us</a></li>
+            <li class="lc"><a href="/tc">Terms & Conditions</a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Elements</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/os">On Sale Products</a></li>
+            <li class="lc"><a href="/bs"> Best Selling Products</a></li>
+        </ul>
+        </li>
+    </ul>        
+</nav>
+<div class  ="basket">
+<img src="photos\basket.jpeg" height="550px" width="500px" alt="sample image"  />
+<h2>Decorative Basket</h2>
+<h3>Add To Cart</h3>
+</div>
+<div class  ="av">
+<img src="photos\av.jpeg" height="220px" width="250px" alt="sample image"  />
+<h2>Antique Vases</h2>
+<h3>Add To Cart</h3>
+</div>
+<div class  ="fg">
+<img src="photos\figurines.jpeg" height="220px" width="250px" alt="sample image"  />
+<h2>Figurines</h2>
+<h3>Add To Cart</h3>
+</div>
+<div class="wl">
+    <p><b>WELCOME</b></p>
+</div>
+<div class="br">
+<p>Marketing is not selling. Marketing is building
+    a brand in the mind of the prospect.</p>
+</div>
+<div class="fi">
+<p>Featured Items</p>
+</div>
+<div class  ="pott">
+<img  src="photos\pott.jpeg" width="300px" height="250px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;POTTERY VASE</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart</h4>
+</div>
+<div class  ="deco">
+<img  src="photos\deco.jpeg" width="300px" height="250px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DECOR ACCESSORY</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart</h4>
+</div>
+<div class  ="wall">
+<img  src="photos\wall.jpeg" width="300px" height="250px"  alt="sample image"  />
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WALL CLOCK</h3>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add to Cart</h4>
+</div>
+<div class  ="last">
+    <h3>CUSTOMER SERVICE</h3>
+    <div style="line-height:10px">
+    <p>Help & Contact us</p>
+    <p>Returns & Refunds</p>
+    <p>Online Stores</p>
+    <p>Terms & Conditions</p>
+</div></div>
+<div class  ="last1">
+    <h3>COMPANY</h3>
+    <div style="line-height:10px">
+        <p>What We Do</p>
+        <p>Our Services</p>
+        <p>Latest Photos</p>
+        <p>FAQs</p>
+    </div>
+</div>
+<div class  ="last2">
+    <h3>SOCIAL MEDIA</h3>
+    <div style="line-height:10px">
+        <p>Twitter</p>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Pinterest</p>
+    </div>
+</div>
+<div class  ="last3">
+    <h3>PROFILE</h3>
+    <div style="line-height:10px">
+        <p>My Account</p>
+        <p>Checkout</p>
+        <p>Order Tracking</p>
+        <p>Help & Support</p>
+    </div>
+</div>
+</body>
+</html>

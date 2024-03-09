@@ -1,0 +1,162 @@
+<html>
+<head>
+    <style>
+        .dropdownmenu ul, .dropdownmenu li{
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdownmenu ul{
+            list-style: none;
+            width: 70%;
+            position: absolute;
+            top: 4%;
+            left: 25%;
+        }
+
+        .dropdownmenu li{
+            float: left;
+            position: relative;
+        }
+
+        .dropdownmenu a{
+            /*background-color: white;*/
+            color:black;
+            display: block;
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 35px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .dropdownmenu li:hover a{
+            
+
+        }
+
+        #submenu{
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 35px;
+            visibility: hidden;
+            z-index: 1;
+            
+        }
+
+        li:hover ul#submenu{
+            opacity: 1;
+            top: 80px;
+            visibility: visible;
+            font-size: 0;
+        }
+        .im{
+            position: absolute;
+            top: 20%;
+            left: 5%;
+        }
+        .last{
+            position: absolute;
+            top: 130%;
+            left: 5%;
+        }
+        .last1{
+            position: absolute;
+            top: 130%;
+            left: 30%;
+        }
+        .last2{
+            position: absolute;
+            top: 130%;
+            left: 55%;
+        }
+        .last3{
+            position: absolute;
+            top: 130%;
+            left: 80%;
+        }
+    </style>
+</head>
+<body>
+<h2 style="padding: 20px 50px 75px 70px;font-size: 30px;">DEPOT</h2>
+<nav class="dropdownmenu">
+    
+    <ul style="display: inline-block;"  >
+        <li ><a href=""><b>Home</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/home"> Main    Home </a></li>
+            <li class="lc"><a href="/mhome"> Minimal Home </a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Shop</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/hd"> Home Decor</a></li>
+            <li class="lc"><a href="/li"> Lighting</a></li>
+        </ul>
+        </li>
+        <li><a href=""><b>Pages</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/au">About Us</a></li>
+            <li class="lc"><a href="/tc">Terms & Conditions</a></li>
+        </ul>
+        </li>
+        <li style="margin-right: 150px;"><a href=""><b>Elements</b></a>
+        <ul id="submenu">
+            <li class="lc"><a href="/os">On Sale Products</a></li>
+            <li class="lc"><a href="/bs"> Best Selling Products</a></li>
+        </ul>
+        </li>
+        <li ><a href=""><b>Cart</b></a>
+    </ul>        
+</nav>
+<div class  ="im">
+<img src="photos\au.jpeg" height="400px" width="1200px" alt="sample image"/>
+<p>
+    Hello and welcome to DEPOT, the place to find the best Grocerry for every taste and occasion. We thoroughly check the quality of our goods, working only with reliable suppliers so that you only receive the best quality product.
+
+We at DEPOT believe in high quality and exceptional customer service. But most importantly, we believe shopping is a right, not a luxury, so we strive to deliver the best products at the most affordable prices, and ship them to you regardless of where you are located.
+We aim to offer our customers a variety of the latest [PRODUCTS CATEGORY NAME]. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget-friendly products. We offer all of this while providing excellent customer service and friendly support.
+
+We always keep an eye on the latest trends in Lighting and put our customers’ wishes first. That is why we have satisfied customers all over the world, and are thrilled to be a part of the Grocerry industry.
+
+The interests of our customers are always top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.
+</p>
+</div>
+<div class  ="last">
+    <h3>CUSTOMER SERVICE</h3>
+    <div style="line-height:10px">
+    <p>Help & Contact us</p>
+    <p>Returns & Refunds</p>
+    <p>Online Stores</p>
+    <p>Terms & Conditions</p>
+</div></div>
+<div class  ="last1">
+    <h3>COMPANY</h3>
+    <div style="line-height:10px">
+        <p>What We Do</p>
+        <p>Our Services</p>
+        <p>Latest Photos</p>
+        <p>FAQs</p>
+    </div>
+</div>
+<div class  ="last2">
+    <h3>SOCIAL MEDIA</h3>
+    <div style="line-height:10px">
+        <p>Twitter</p>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>Pinterest</p>
+    </div>
+</div>
+<div class  ="last3">
+    <h3>PROFILE</h3>
+    <div style="line-height:10px">
+        <p>My Account</p>
+        <p>Checkout</p>
+        <p>Order Tracking</p>
+        <p>Help & Support</p>
+    </div>
+</div>
+</body>
+</html>
